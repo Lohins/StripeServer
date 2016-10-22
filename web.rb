@@ -82,7 +82,7 @@ def authenticate!
   # This code simulates "loading the Stripe customer for your current session".
   # Your own logic will likely look very different.
   return @customer if @customer
-  session[:customer_id] = 'cus_9Pxx0lHIyXdOWQ'
+  session[:customer_id] = "cus_9Pxx0lHIyXdOWQ"
   if session.has_key?(:customer_id)
     customer_id = session[:customer_id]
     begin
